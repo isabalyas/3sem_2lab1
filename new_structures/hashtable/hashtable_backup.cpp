@@ -36,7 +36,6 @@ bool HashTableWithRehash::needRehash() {
 // Перехэширование
 void HashTableWithRehash::performRehash() {
     int newCapacity = capacity * 2;
-    
     // Создаем новую таблицу
     vector<HashTable*> newTable(newCapacity, nullptr);
     
