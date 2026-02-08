@@ -38,6 +38,7 @@ struct OpenHashTable {
     }
 };
 
+// Функции хэш-таблицы
 int hashFunc(const string& key, int capacity);
 bool hashInsert(OpenHashTable* ht, const string& key, const string& value);
 string hashGet(OpenHashTable* ht, const string& key);
@@ -46,3 +47,4 @@ bool hashContains(OpenHashTable* ht, const string& key);
 void hashPrint(OpenHashTable* ht);
 int hashSize(OpenHashTable* ht);
 void hashClear(OpenHashTable* ht);
+bool rehash(OpenHashTable* ht);
